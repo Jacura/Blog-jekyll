@@ -8,19 +8,15 @@ var cp = require('child_process');
 var browserSync = require('browser-sync');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-
-// Build the Jekyll Site
+ 
 gulp.task('jekyll-build', function (done) {
     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
         .on('close', done);
-});
-
-// Rebuild Jekyll and page reload
+}); 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
-
-// Wait for jekyll-build, then launch the Server
+ 
 gulp.task('browser-sync', ['sass', 'img', 'jekyll-build'], function() {
     browserSync({
         server: {
@@ -29,8 +25,7 @@ gulp.task('browser-sync', ['sass', 'img', 'jekyll-build'], function() {
         notify: false
     });
 });
-
-// Compile files
+ 
 gulp.task('sass', function () {
     return gulp.src('assets/css/scss/main.scss')
         .pipe(sass({
@@ -41,9 +36,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
-});
-
-// Compression images
+}); 
 gulp.task('img', function() {
 	return gulp.src('assets/img/**/*')
 		.pipe(cache(imagemin({
@@ -55,14 +48,12 @@ gulp.task('img', function() {
     .pipe(gulp.dest('_site/assets/img'))
     .pipe(browserSync.reload({stream:true}));
 });
-
-// Watch scss, html, img files
+ 
 gulp.task('watch', function () {
     gulp.watch('assets/css/scss/**/*.scss', ['sass']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
     gulp.watch('assets/img/**/*', ['img']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
-
-//  Default task
+ 
 gulp.task('default', ['browser-sync', 'watch']);
