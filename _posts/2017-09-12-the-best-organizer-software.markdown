@@ -22,6 +22,6 @@ Today I'd like to show you how to create a bootstrap navbar, adjust it to your n
 Bootstrap is full of incredible features but can seem too complex for many of us. You simply cannot remember all the functions or cannot take one week off to study its documentation. Many times even experienced users get surprised when they discover some of its hidden gems. I have carefully chosen some of the best tips and tricks that I have used in my Bootstrap coding career so far and I would like to share them with you. For a better reading experience, I divided them into 4 groups.
  
  
- ###  LIST OF 41 BEAUTIFUL & FREE ICON FONTS
+### LIST OF 41 BEAUTIFUL & FREE ICON FONTS
   
 You have probably already used some icon fonts on one of your websites. But did you know there are so many beautiful free icon fonts that you could use? This is probably the most comprehensive list of icon fonts on the planet.  And whether you are a developer, designer or web enthusiast, you’ll surely love it. Why icon fonts? Icons are pictograms that help our websites' readers easily navigate through the blocks of the text and different elements on the web page. 
