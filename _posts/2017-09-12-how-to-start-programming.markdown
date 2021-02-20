@@ -4,7 +4,7 @@ title: How To Start Competetive Programming
 date: 2020-02-12 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: how-to-start.jpg # Add image post (optional)
-tags: [Programming, Learn] # add tag
+
 ---
 As a coder, you should not be satisfied with just reading and coding on your computer. For developing your coding skills, you need to test yourself. You need to take yourself outside your comfort zone and evaluate how you perform. That’s what different coding competitions do for you. As you compete for a prize against several experienced coders, you can really feel the heat of coding under pressure. Plus, it will push you to execute shorter and quicker codes, enhance your problem-solving skills and make you a much better coder than before.
 
