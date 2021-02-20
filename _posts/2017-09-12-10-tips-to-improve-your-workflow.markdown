@@ -53,13 +53,14 @@ So, how do you tell git which files to put into a commit? This is where the stag
 To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add <filename> command (see Step 3 below).
   
   
- ### Step 3: Add a file to the staging environment
+### Step 3: Add a file to the staging environment
  
  Add a file to the staging environment using the git add command. 
 
 If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line). 
 
 >To reiterate, the file has not yet been added to a commit, but it's about to be.
+
 
 ### Step 4: Create a commit
 
